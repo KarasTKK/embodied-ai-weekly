@@ -1,0 +1,130 @@
+```html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embodied AI 具身智能 · 行业前沿周刊</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+        .star-rating svg {
+            width: 1.25rem;
+            height: 1.25rem;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white antialiased">
+
+    <div class="container mx-auto px-4 py-8 md:py-12">
+
+        <!-- 1. 顶部 Header -->
+        <header class="text-center mb-10 md:mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
+                Embodied AI 具身智能 · 行业前沿周刊
+            </h1>
+            <p class="mt-4 text-lg text-gray-400">
+                由 AI Agent 自动驱动的深度技术策展 | <span id="current-date"></span>
+            </p>
+        </header>
+
+        <main>
+            <!-- 2. 头条专题 -->
+            <section id="headline-feature">
+                <article class="bg-gray-800 rounded-2xl overflow-hidden shadow-2xl relative border border-gray-700">
+                    <div class="absolute top-4 right-4 bg-cyan-500 text-white text-sm font-bold px-4 py-1.5 rounded-full z-10 shadow-lg">
+                        TOP CHOICE
+                    </div>
+                    <img src="https://i.ytimg.com/vi/AZLHaP83xPA/maxresdefault.jpg" alt="NVIDIA Project GR00T：迈向通用人形机器人的基础模型" class="w-full h-64 md:h-96 object-cover object-center">
+                    <div class="p-6 md:p-10">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">NVIDIA Project GR00T：迈向通用人形机器人的基础模型</h2>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-gray-300">Foundation Models</span>
+                            <span class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-gray-300">Humanoid Robots</span>
+                            <span class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-gray-300">Reinforcement Learning</span>
+                            <span class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-gray-300">Simulation-to-Real</span>
+                        </div>
+
+                        <div class="mt-8 space-y-8 text-gray-300">
+                            <div>
+                                <h3 class="flex items-center text-xl font-semibold text-cyan-400 mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+                                    技术深度解析 (Tech Analysis)
+                                </h3>
+                                <p class="text-base leading-relaxed">Project GR00T 的核心是其多模态指令遵循和具身学习能力。它通过在 NVIDIA Isaac Lab 模拟环境中进行强化学习和模仿学习进行训练，使其能够将抽象的自然语言指令（如“拿起那个苹果”）转化为具体的物理动作序列。模型架构基于 Transformer，能够处理视频、文本和遥测数据流，实现零样本或少样本学习，从而快速适应新任务和环境。这代表了从特定任务编程到通用人工智能驱动的机器人控制的重大范式转变。</p>
+                            </div>
+                             <div>
+                                <h3 class="flex items-center text-xl font-semibold text-green-400 mb-3">
+                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2h10a2 2 0 002-2v-1a2 2 0 012-2h1.945M7.737 16.516L7.737 16.516a1 1 0 01-1.414 0l-2.121-2.121a1 1 0 010-1.414l2.121-2.121a1 1 0 011.414 0l2.121 2.121a1 1 0 010 1.414l-2.121 2.121zM16.263 16.516L16.263 16.516a1 1 0 001.414 0l2.121-2.121a1 1 0 000-1.414l-2.121-2.121a1 1 0 00-1.414 0l-2.121 2.121a1 1 0 000 1.414l2.121 2.121z" /></svg>
+                                    行业横向对比 (Industry Comparison)
+                                </h3>
+                                <p class="text-base leading-relaxed">与 Boston Dynamics 的 Atlas（专注于动态运动和硬件）或 Tesla Optimus（专注于大规模制造和特定任务）相比，NVIDIA 的 GR00T 更侧重于构建一个开放的“大脑”或“操作系统”。它的策略是赋能众多机器人硬件制造商（如 Agility Robotics, Apptronik），而不是自己制造机器人。这种平台化策略类似于其在 GPU 领域的成功，旨在建立一个围绕 Isaac 平台的生态系统，成为人形机器人领域的“Android”或“Windows”。</p>
+                            </div>
+                             <div>
+                                <h3 class="flex items-center text-xl font-semibold text-amber-400 mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                                    商业前景洞察 (Commercial Insight)
+                                </h3>
+                                <p class="text-base leading-relaxed">GR00T 的商业潜力巨大，它将大大降低开发复杂机器人应用程序的门槛和成本。企业可以利用该基础模型，快速为其特定场景（如物流、仓储、制造业、医疗保健）定制机器人技能，而无需从头开始进行复杂的 AI 研发。这将加速人形机器人在各行各业的商业落地。NVIDIA 的商业模式将围绕其硬件（Jetson Thor）、软件平台（Isaac Sim, OS) 和潜在的模型即服务（MaaS）展开，形成一个强大的技术和商业护城河。</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-10 text-center">
+                            <a href="https://www.youtube.com/watch?v=AZLHaP83xPA" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-transform transform hover:scale-105 shadow-lg">
+                                查看原视频
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 3. 精选快讯区 -->
+            <section id="featured-news" class="mt-16">
+                <h2 class="text-3xl font-bold border-l-4 border-cyan-400 pl-4 mb-8">
+                    更多精选动态
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    
+                    <article class="bg-gray-800 rounded-lg overflow-hidden shadow-lg flex flex-col transition-transform transform hover:-translate-y-1 border border-gray-700">
+                        <img src="https://i.ytimg.com/vi/v-wB5_0dJ1s/maxresdefault.jpg" alt="Figure 01 机器人集成 OpenAI 模型，实现对话与自主操作" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-bold mb-3 flex-grow">Figure 01 机器人集成 OpenAI 模型，实现对话与自主操作</h3>
+                            <div class="mb-4">
+                                <span class="text-sm font-semibold text-gray-400 mr-2">Value Score: 8.0/10</span>
+                                <div class="star-rating flex items-center">
+                                    <svg class="text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg class="text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg class="text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg class="text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg class="text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg class="text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg class="text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg class="text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg class="text-gray-600" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg class="text-gray-600" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                </div>
+                            </div>
+                            <p class="text-gray-400 text-base mb-6">
+                                机器人初创公司 Figure 展示了其人形机器人 Figure 01 的最新进展，通过与 OpenAI 的合作，机器人能够与人类进行流畅的自然语言对话，并根据语音指令理解和执行任务。视频中，机器人能识别并递给人类物品，收拾垃圾，展现了惊人的推理和自主操作能力。
+                            </p>
+                            <div class="mt-auto pt-4">
+                                <a href="https://www.youtube.com/watch?v=v-wB5_0dJ1s" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-400 hover:text-blue-300">
+                                    阅读详情 →
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- 可以继续添加更多卡片 -->
+                    
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <script>
+        document.getElementById('current-date').textContent = new Date().toLocaleDateString('zh-CN', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    </script>
+
+</body>
+</html>
+```
