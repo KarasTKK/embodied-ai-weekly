@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embodied AI · 具身智能深度周刊</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        slate: {
+                            850: '#151e32',
+                            900: '#0f172a',
+                            950: '#020617',
+                        },
+                        cyan: {
+                            400: '#22d3ee',
+                            950: '#083344',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'Menlo', 'Courier New', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #020617;
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .tech-card {
+            box-shadow: 0 0 0 1px #1e293b, 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+        }
+        .tech-card:hover {
+            box-shadow: 0 0 0 1px #22d3ee50, 0 20px 25px -5px rgba(0, 0, 0, 0.6);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #020617;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #334155;
+        }
+    </style>
+</head>
+<body class="text-slate-400 min-h-screen">
+
+    <div class="max-w-4xl mx-auto px-4 py-16">
+        
+        <!-- 页面标题区 -->
+        <header class="mb-16 border-b border-slate-800 pb-8">
+            <div class="flex flex-col gap-4">
+                <h1 class="text-4xl md:text-5xl font-bold text-slate-50 tracking-tight leading-tight">
+                    Embodied AI · <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">具身智能深度周刊</span>
+                </h1>
+                <div class="flex items-center gap-3">
+                    <div class="h-px bg-cyan-900 w-12"></div>
+                    <p class="text-cyan-400 font-mono text-sm tracking-wide">
+                        由 AI Agent 自动策展的技术深度拆解 | 第 2025-52 期
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <!-- 内容列表区 -->
+        <div class="space-y-10">
+
+            <!-- Card 1 -->
+            <article class="tech-card bg-slate-900 rounded-xl overflow-hidden transition-all duration-300">
+                <div class="p-6 md:p-8">
+                    <!-- Card Header -->
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-8 border-b border-slate-800/50 pb-6">
+                        <h2 class="text-2xl font-bold text-slate-50 leading-snug">
+                            Figure 02 人形机器人运动控制算法大更新：端到端神经网络的胜利
+                        </h2>
+                        <div class="flex-shrink-0">
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-mono font-bold bg-cyan-950/50 text-cyan-400 border border-cyan-900">
+                                Score: 9.8/10
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="space-y-8">
+                        
+                        <!-- Section 1: Tech Analysis -->
+                        <div class="relative pl-6 border-l-2 border-slate-700 hover:border-cyan-400 transition-colors duration-300">
+                            <h3 class="flex items-center gap-2 text-sm font-semibold text-slate-200 uppercase tracking-wider mb-2">
+                                <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                                技术逻辑解析
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed text-sm md:text-base">
+                                本次更新摒弃了传统的模型预测控制（MPC），全面转向基于 Transformer 的 Visuomotor Policy。核心突破在于引入了 200Hz 的高频推理闭环，利用机载推理芯片处理多模态输入（触觉传感器阵列 + RGBD 视觉）。技术白皮书显示，新架构显著降低了步态规划的延迟，使得机器人在非结构化地形（如碎石路面）上的鲁棒性提升了 400%。
+                            </p>
+                        </div>
+
+                        <!-- Section 2: Industry Comparison -->
+                        <div class="relative pl-6 border-l-2 border-slate-700 hover:border-cyan-400 transition-colors duration-300">
+                            <h3 class="flex items-center gap-2 text-sm font-semibold text-slate-200 uppercase tracking-wider mb-2">
+                                <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                                行业赛道对比
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed text-sm md:text-base">
+                                相比 Tesla Optimus Gen 3 依然依赖的部分规则式控制层，Figure 02 展示了更为激进的“纯学习”路线。与 Agility Robotics 的 Digit 相比，Figure 在上肢精细操作与下肢运动的协调性上取得了代际领先，但在电池续航管理上（4小时 vs 6小时）仍略逊一筹。
+                            </p>
+                        </div>
+
+                        <!-- Section 3: Commercial Insight -->
+                        <div class="relative pl-6 border-l-2 border-slate-700 hover:border-cyan-400 transition-colors duration-300">
+                            <h3 class="flex items-center gap-2 text-sm font-semibold text-slate-200 uppercase tracking-wider mb-2">
+                                <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                                商业落地洞察
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed text-sm md:text-base">
+                                宝马斯巴达堡工厂的试点数据显示，新算法使得车身钣金件搬运任务的节拍时间（Cycle Time）缩短了 15%，首次达到了人类工人的 85% 水平。这意味着人形机器人替代高危、重复性人力岗位的 ROI 拐点已提前到来，预计 2026 年将迎来汽车制造业的规模化采购订单。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="bg-slate-950/50 px-6 md:px-8 py-4 border-t border-slate-800 flex justify-between items-center text-xs font-mono text-slate-500">
+                    <span class="flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-cyan-500/50"></span>
+                        Channel: TechCrunch / Figure AI Blog
+                    </span>
+                    <span>2025-12-26</span>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="tech-card bg-slate-900 rounded-xl overflow-hidden transition-all duration-300">
+                <div class="p-6 md:p-8">
+                    <!-- Card Header -->
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-8 border-b border-slate-800/50 pb-6">
+                        <h2 class="text-2xl font-bold text-slate-50 leading-snug">
+                            Google DeepMind RT-X 2.0：通用机器人大脑的泛化能力跃迁
+                        </h2>
+                        <div class="flex-shrink-0">
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-mono font-bold bg-cyan-950/50 text-cyan-400 border border-cyan-900">
+                                Score: 9.5/10
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="space-y-8">
+                        
+                        <!-- Section 1: Tech Analysis -->
+                        <div class="relative pl-6 border-l-2 border-slate-700 hover:border-cyan-400 transition-colors duration-300">
+                            <h3 class="flex items-center gap-2 text-sm font-semibold text-slate-200 uppercase tracking-wider mb-2">
+                                <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                                技术逻辑解析
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed text-sm md:text-base">
+                                RT-X 2.0 引入了名为 "Cross-Embodiment Contrastive Learning" 的新机制。通过将不同形态机器人（单臂、双臂、轮式、足式）的操作数据映射到统一的动作潜空间（Latent Action Space），模型实现了跨硬件平台的技能零样本迁移（Zero-shot Transfer）。实验表明，只需 10% 的微调数据，即可让从未见过的机械臂学会复杂的叠衣物操作。
+                            </p>
+                        </div>
+
+                        <!-- Section 2: Industry Comparison -->
+                        <div class="relative pl-6 border-l-2 border-slate-700 hover:border-cyan-400 transition-colors duration-300">
+                            <h3 class="flex items-center gap-2 text-sm font-semibold text-slate-200 uppercase tracking-wider mb-2">
+                                <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                                行业赛道对比
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed text-sm md:text-base">
+                                此项研究直接挑战了 Covariant 等公司的数据垂直整合壁垒。传统的单一硬件垂直优化路径可能面临“通用模型降维打击”的风险。与 OpenAI 暂停机器人团队相比，Google 在基础模型与具身智能结合的道路上展现了更持久的战略定力，正在构建类似 Android 的机器人通用操作系统雏形。
+                            </p>
+                        </div>
+
+                        <!-- Section 3: Commercial Insight -->
+                        <div class="relative pl-6 border-l-2 border-slate-700 hover:border-cyan-400 transition-colors duration-300">
+                            <h3 class="flex items-center gap-2 text-sm font-semibold text-slate-200 uppercase tracking-wider mb-2">
+                                <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                                商业落地洞察
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed text-sm md:text-base">
+                                对于硬件制造商（OEM）而言，RT-X 2.0 意味着软件研发成本的大幅降低。未来商业模式可能转向“硬件即服务”与“模型订阅制”的混合。对于中小企业，无需组建庞大的 AI 团队即可部署具备复杂操作能力的机器人，这将极大地促进服务机器人在餐饮、物流末端配送场景的渗透率。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="bg-slate-950/50 px-6 md:px-8 py-4 border-t border-slate-800 flex justify-between items-center text-xs font-mono text-slate-500">
+                    <span class="flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-cyan-500/50"></span>
+                        Channel: arXiv / Google DeepMind
+                    </span>
+                    <span>2025-12-25</span>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="tech-card bg-slate-900 rounded-xl overflow-hidden transition-all duration-300">
+                <div class="p-6 md:p-8">
+                    <!-- Card Header -->
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-8 border-b border-slate-800/50 pb-6">
+                        <h2 class="text-2xl font-bold text-slate-50 leading-snug">
+                            Stanford Mobile ALOHA 2.0：开源与低成本的极致结合
+                        </h2>
+                        <div class="flex-shrink-0">
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-mono font-bold bg-cyan-950/50 text-cyan-400 border border-cyan-900">
+                                Score: 9.1/10
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="space-y-8">
+                        
+                        <!-- Section 1: Tech Analysis -->
+                        <div class="relative pl-6 border-l-2 border-slate-700 hover:border-cyan-400 transition-colors duration-300">
+                            <h3 class="flex items-center gap-2 text-sm font-semibold text-slate-200 uppercase tracking-wider mb-2">
+                                <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                                技术逻辑解析
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed text-sm md:text-base">
+                                ALOHA 2.0 在硬件设计上进行了重大重构，采用了更轻量化的碳纤维骨架和自研的高扭矩密度关节模组。软件层面，引入了 Action Chunking with Transformers (ACT) 的升级版，支持更长时序的任务规划。最关键的是，通过全身遥操作系统的改进，数据收集的效率提升了 3 倍，大幅降低了模仿学习的数据门槛。
+                            </p>
+                        </div>
+
+                        <!-- Section 2: Industry Comparison -->
+                        <div class="relative pl-6 border-l-2 border-slate-700 hover:border-cyan-400 transition-colors duration-300">
+                            <h3 class="flex items-center gap-2 text-sm font-semibold text-slate-200 uppercase tracking-wider mb-2">
+                                <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                                行业赛道对比
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed text-sm md:text-base">
+                                如果说 Figure 和 Optimus 是具身智能界的 iOS，那么 ALOHA 正在成为 Raspberry Pi。虽然其绝对性能不如工业级产品，但其 < $30,000 的整机成本和完全开源的特性，使其成为学术界和开发者社区的首选平台，极大地加速了长尾应用场景（如家务烹饪、整理）的算法迭代速度。
+                            </p>
+                        </div>
+
+                        <!-- Section 3: Commercial Insight -->
+                        <div class="relative pl-6 border-l-2 border-slate-700 hover:border-cyan-400 transition-colors duration-300">
+                            <h3 class="flex items-center gap-2 text-sm font-semibold text-slate-200 uppercase tracking-wider mb-2">
+                                <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                                商业落地洞察
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed text-sm md:text-base">
+                                ALOHA 的开源生态可能催生出一批“机器人应用商店”创业公司，专注于为特定低成本硬件开发技能包（Skill Packs）。家庭场景的商业化落地不再遥不可及，预计 2026 年底将出现首批面向极客群体的预装配版本，作为“高级智能家电”进入市场，开启 C 端具身智能的元年。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="bg-slate-950/50 px-6 md:px-8 py-4 border-t border-slate-800 flex justify-between items-center text-xs font-mono text-slate-500">
+                    <span class="flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-cyan-500/50"></span>
+                        Channel: Stanford IRIS Lab
+                    </span>
+                    <span>2025-12-24</span>
+                </div>
+            </article>
+
+        </div>
+
+        <footer class="mt-20 text-center text-slate-600 text-sm font-mono">
+            <p>Generated by Embodied AI Curator Agent</p>
+        </footer>
+
+    </div>
+</body>
+</html>
